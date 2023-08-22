@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" href="/img/leaf.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>To-do-list</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>TO-DO LIST</h1>
+        <p>All what you need today to do is:</p>
+      </header>
+      <section class="listMain">
+        <div class="list" id="list">
+          <img src="/img/leaf.svg" alt="leaf" />
+          <p>The list is empty</p>
+        </div>
+      </section>
+      <section class="task" id="task">
+        <div class="task-header">Create a new task</div>
+        <div class="task-body">
+          <form id="form" class="form">
+            <input
+              type="text"
+              placeholder="New task"
+              id="input"
+              class="input"
+            />
+            <small>What to do, how much time, results</small>
+            <button class="btn-create" type="submit" form="form">Create</button>
+          </form>
+        </div>
+      </section>
+    </div>
+    <script src="/jquery-3.7.0.min.js"></script>
+    <script id="start" src="/main.js"></script>
+    <!--WZ-REKLAMA-1.0IZ-->
+    <!-- <div
+      style="
+        clear: both;
+        width: 100%;
+        height: 90px;
+        padding: 0px;
+        z-index: 99;
+        position: relative;
+      "
+    >
+      <div style="width: 728px; height: 90px; margin: 0 auto">
+        <script
+          src="https://www.webzdarma.cz/assets/static/floatad.js"
+          async
+          defer
+        ></script>
+      </div>
+    </div> -->
+    <!--WZ-REKLAMA-1.0IK-->
+  </body>
+</html>

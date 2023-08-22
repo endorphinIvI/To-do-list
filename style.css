@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #e4e5e7;
+}
+.container {
+  margin: 0 auto;
+  width: 80vw;
+}
+body header {
+  text-align: center;
+  margin: 10vh 0 5vh 0;
+}
+h1 {
+  font-size: 50px;
+}
+
+.list,
+.task {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 10px;
+}
+
+.listMain {
+  background-color: #fff;
+  border-radius: 10px;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
+}
+.list img {
+  width: 15%;
+}
+.list p {
+  font-size: 35px;
+  text-align: center;
+}
+
+.task {
+  background-color: #fff;
+  margin: 5vh auto;
+}
+
+.task-header {
+  background-color: rgba(0, 0, 0, 0.03);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 10px 10px 0 0;
+  padding: 0.75rem 1.25rem;
+  font-size: 20px;
+}
+.task-body {
+  padding: 0.75rem 1.25rem;
+}
+.task-body small {
+  color: #6c757d;
+}
+.task-body input {
+  width: auto;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid rgb(0, 200, 255);
+  font-size: 20px;
+  outline: none;
+}
+.task-body input:focus {
+  border-color: #a9f06f;
+}
+
+.task-body button {
+  width: 5em;
+  font-size: 1.25em;
+  background-color: rgb(68, 68, 198);
+  color: #fff;
+  border-radius: 10px;
+}
+.tasks {
+  list-style-type: none;
+  text-align: left;
+  display: block;
+  background-color: #e4e5e7;
+  border: solid #6c757d;
+  border-width: 0.1rem 0;
+  border-radius: 10px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.btns {
+  display: flex;
+}
+.btn-create {
+  margin-top: 10px;
+}
+.btn-create:hover {
+  cursor: pointer;
+  background-color: #a9f06f;
+  color: black;
+}
+.done {
+  border: solid rgb(0, 200, 255);
+  width: 23.5px;
+  height: 23.5px;
+}
+.items {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  border: solid #6c757d;
+  border-width: 0.1rem 0.2rem;
+  background-color: #fff;
+  padding: 2%;
+  border-radius: 10px;
+  align-items: center;
+}
+.dataDone {
+  text-decoration: line-through;
+  color: grey;
+}
+.items p {
+  max-width: 80%;
+}
+
+.del {
+  text-align: center;
+  margin: 0 0 0 5px;
+  width: 23px;
+}
+.del img {
+  width: 15px;
+  vertical-align: middle;
+}
+
+@media only screen and (max-width: 360px) {
+  body header {
+    margin: 5vh 0 5vh 0;
+  }
+  header h1 {
+    font-size: 30px;
+  }
+
+  .list img {
+    width: 30%;
+  }
+  .list p {
+    font-size: 20px;
+  }
+}
